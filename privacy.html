@@ -17,7 +17,7 @@
 <body>
   <a class="back" href="./">← Back</a>
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: 8 May 2026</p>
+  <p class="muted">Last updated: 17 May 2026</p>
 
   <p>Tangerine ("we", "our", "the app") is a shared-expense tracker for iOS. This Privacy Policy explains what data we collect, why, and how it's used. By using Tangerine you agree to the practices described below.</p>
 
@@ -25,6 +25,9 @@
   <ul>
     <li><strong>Account information.</strong> When you sign up via Sign in with Apple or Sign in with Google, we receive your email address and (if you choose to share it) your display name and avatar URL.</li>
     <li><strong>Profile data.</strong> Display name, avatar emoji and colour, and default currency, all of which you choose in the app.</li>
+    <li><strong>Phone number.</strong> After signing in, you're asked to add a phone number with country code. We store it to let other Tangerine users add you as a friend or to a group by phone, and so we can show you the people you already share groups with by name. Your phone number is never shared with anyone outside the groups and friendships you've explicitly joined. You can change or remove your phone number at any time in Account → Phone number; removing it frees the number for someone else to claim. We do not currently verify ownership of the phone number (no SMS/WhatsApp code) — that may be added in a future release.</li>
+    <li><strong>Contacts data (only when you tap "Choose from Contacts").</strong> When you tap that button in Add Friend or Add Members, iOS shows its system contact picker. The contact you pick — and only that contact — is returned to us; we never read the rest of your address book and we do not request the iOS Contacts permission. The picked name and phone are pre-filled in the form so you can add the friend or member with one tap. We do not upload your contacts to our server, hash them, or share them with anyone.</li>
+    <li><strong>Group cover photos.</strong> If you upload a custom photo as a group icon, the JPEG is stored on Supabase Storage in a bucket readable only by members of that group via signed-URL convention. You and other members of the group can replace or remove the photo at any time.</li>
     <li><strong>Expense data.</strong> Group names, member lists, expense descriptions, amounts, currencies, dates, payers and split details, settle-up payments, and comments. This is the core data the app exists to manage.</li>
     <li><strong>Device tokens.</strong> An Apple Push Notification Service (APNs) token so we can deliver push notifications about activity that involves you.</li>
     <li><strong>Diagnostic logs.</strong> Crash reports and performance metrics provided by Apple's built-in App Analytics, only if you opted in via your iPhone's Privacy & Security settings.</li>
@@ -32,8 +35,9 @@
 
   <h2>2. How we use your data</h2>
   <ul>
-    <li>To run the app: store and sync expenses across your devices and the people you share groups with.</li>
+    <li>To run the app: store and sync expenses, groups, friendships, and your phone-number-to-account link across your devices and the people you share groups with.</li>
     <li>To authenticate you and protect your account.</li>
+    <li>To let you and other users find each other by phone number when adding friends or group members.</li>
     <li>To send notifications about new expenses, settle-ups and comments that involve you.</li>
     <li>To deliver non-personalised advertising via Google AdMob (unless you have an active "Remove Ads" subscription).</li>
     <li>To respond to your support requests.</li>
